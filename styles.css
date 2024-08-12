@@ -23,7 +23,8 @@ div.icon {
   height: 1.5rem;
 }
 
-.user-info .profile-pic {
+.user-info .profile-pic,
+.trending-item .profile-pic {
   height: 2rem;
   width: 2rem;
 }
@@ -172,12 +173,14 @@ input[type="search"] {
 .non-name,
 .title,
 .project-name,
-.announcement-title {
+.announcement-title,
+.handle {
   font-weight: bold;
 }
 
 .project-description,
-.announcement-body {
+.announcement-body,
+.trending-project {
   color: gray;
 }
 
@@ -244,12 +247,15 @@ input[type="search"] {
 
 .announcements-container,
 .trending-container {
-  padding: 8px 24px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   background-color: white;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcements-container {
+  padding: 8px 24px;
 }
 
 .announcement:not(:last-child) {
@@ -260,6 +266,20 @@ input[type="search"] {
 
 .announcement {
   padding: 16px 0px;
+}
+
+.trending-container {
+  padding: 16px 24px;
+}
+
+.trending-item {
+  padding: 8px 0px;
+  row-gap: 8px;
+  column-gap: 16px;
+}
+
+.announcement,
+.trending-item {
   font-size: 0.9rem;
 }
 
